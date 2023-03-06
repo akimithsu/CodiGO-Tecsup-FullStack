@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./factura.css" />
+    <title>Modelo de Factura</title>
+  </head>
+  <body>
+    <!-- <header>Factura</header> -->
+    <div class="factura">
+      <table border="1">
+        <thead>
+          <tr>
+            <td>CANTIDAD</td>
+            <td colspan="3">DESCRIPCION</td>
+            <td>P.UNITARIO</td>
+            <td>VALOR DE VENTA</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="cant">3</td>
+            <td colspan="3">Galleta oreo sabor vainilla</td>
+            <td>S/1.00</td>
+            <td>S/3.00</td>
+          </tr>
+          <tr>
+            <td id="cant">2</td>
+            <td colspan="3">Chocolate princesa de fresa</td>
+            <td>S/2.00</td>
+            <td>S/4.00</td>
+          </tr>
+          <tr>
+            <td id="cant">1</td>
+            <td colspan="3">Gaseosa KR 600ml</td>
+            <td>S1.00</td>
+            <td>S/1.00</td>
+          </tr>
+          <tr>
+            <td id="cant">4</td>
+            <td colspan="3">Gaseosa ORO 3L</td>
+            <td>S/7.00</td>
+            <td>S/28.00</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Nombre de Encargado:</td>
+            <td>Revisado</td>
+            <td>Visto Bueno</td>
+            <td rowspan="2">Subtotal</td>
+            <td rowspan="2">S/36.00</td>
+          </tr>
+          <tr>
+            <td colspan="2">Rodrigo Mamani</td>
+            <td>Juanito Pérez</td>
+            <td>Si</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Minimarket de abarrotes X</td>
+            <td rowspan="2">RUC: 107050489</td>
+            <td colspan="2">CANCELADO</td>
+            <td>I.G.V</td>
+            <td>S/6.48</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <img
+                class="firma"
+                src="./Imagenes/firma.png"
+                alt="No se cargó correctamente"
+                align="center"
+              />
+            </td>
+            <td>TOTAL</td>
+            <td>S/42.48</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>

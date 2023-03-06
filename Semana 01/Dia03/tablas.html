@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        background-color: #444;
+        color: #eee;
+        font-family: sans-serif;
+      }
+      code {
+        font-family: consolas;
+        color: yellow;
+      }
+      h2{
+        font-family: 'Courier New', Courier, monospace;
+        color: blue;
+      }
+      th{
+        font-family: 'Times New Roman', Times, serif;
+        color: rebeccapurple;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Tablaas</header>
+    <main>
+      <section>
+        <h2>Filas y columnas</h2>
+        <p>Las tablas se colocan dentro de la etiqueta <code>table</code></p>
+        <p>las tablas tienen 3 elementos</p>
+        <ul>
+          <li><code>thead</code>: Cabecera</li>
+          <li><code>tbody</code>: Cuerpo</li>
+          <li><code>tfoot</code>: Footer</li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <h2>Tabla simple</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Nro</th>
+              <th>Descripcion</th>
+              <th>P.unitario</th>
+              <th>P.total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2</td>
+              <td>Teclado micronic</td>
+              <td>S/200.00</td>
+              <td>S/400.00</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>audifonos micronic</td>
+              <td>S/100.00</td>
+              <td>S/100.00</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>mouse micronic</td>
+              <td>S/200.00</td>
+              <td>S/600.00</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>case micronic</td>
+              <td>S/200.00</td>
+              <td>S/400.00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+                <td colspan="3" align="center">total</td>
+                <td>S/1000.00</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
