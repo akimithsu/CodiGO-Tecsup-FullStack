@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            color: #eee;
+            background-color: #222;
+        }
+        /* section{
+            font-size: 20px;
+        } */
+        p{
+            font-size: 36px;
+        }
+        /* todos los elementos de la clase rojo que sean descendientes de la clase grande */
+        .grande .rojo{
+            font-size: 50px;
+        }
+        /* Hijos directos de ul (en primer grado) del elemento ul*/
+        ul > li{
+            border: 1px solid yellow;
+        }
+    </style>
+<body>
+</head>
+    <section>
+        <p>Texto del parrafo</p>
+        texto fuera del parrafo
+        <p class="grande
+        ">texto del <span class="rojo">parrafo</span> grande</p>
+    </section>
+    <section>
+        <ul>
+            <li>JavaScript</li>
+            <ol>
+                <li>NodeJS</li>
+            <li>Browser</li>
+        </ol>
+            <li>Python</li>
+            <li>TypeScript</li>
+        </ul>
+    </section>
+</body>
+</html>
