@@ -1,29 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .caja-1{
-            border: 1px solid red;
-            width: 200px;
-            height: 100px;
-        }
-        .span-1{
-            border: 1px solid blue;
-            width: 200px;
-            height: 100px;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #ccc;
+        border: 5px solid peru;
+        height: 100vh;
+      }
+      .caja-1 {
+        border: 1px solid red;
+        width: 200px;
+        height: 100px;
+        /* overflow-x: scroll; */
+        overflow-y: scroll;
+        word-wrap: break-word;
+        /* width: 200px; /* set the width of the div 
+        white-space: nowrap; /* prevent text from wrapping 
+        overflow: hidden; /* hide any overflowing content 
+        text-overflow: ellipsis; /* display an ellipsis (...) to indicate truncated text */ */
+      }
+      .caja-2{
+        border: 1px solid beige;
+        height: 100px;
+        width: 200px;
+        overflow-x: scroll;
+
+      }
+      .parrafo-grande{
+        width: 300px;
+
+      }
+      .span-1 {
+        border: 1px solid blue;
+        width: 200px;
+        height: 100px;
+      }
     </style>
-</head>
-<body>
-    <div class="caja-1">algo de contenido</div>
+  </head>
+  <body>
+    <div class="caja-1">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
+    </div>
     <span class="span-1">mas contenido</span>
-</body>
+    <div class="caja-2">
+      <p class="parrafo-grande">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+    </div>
+  </body>
 </html>

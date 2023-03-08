@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+      }
+      .caja-1 {
+        /* width: 200px; */
+        height: 200px;
+        background-color: rgba(150, 100, 92, 0.5);
+      }
+      .caja-2 {
+        color: white;
+        height: 200px;
+        background-color: aqua;
+        background-image: url(./background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .caja-3 {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        border-radius: 50%;
+      }
+      .caja-4 {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        border-radius: 50%;
+        background-image: url(./background.jpg);
+        overflow: hidden;
+        background-size: cover;
+      }
+      .caja-5 {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        border-radius: 50%;
+        overflow: hidden; /* OCULTAR TODO LO QUE ESCAPE DE LA IMAGEN */
+      }
+      .caja-5 img {
+        width: 100%; /* LOS PORCENTAJES SE USAN CUANDO LOS PADRES TIENEN UN TAMAÑO DEFINIDO
+         */
+        height: 100%;
+      }
+      input{
+        border: 0;
+        background-color: black;
+        border-bottom: 6px solid aqua;
+        border-radius: 8px;
+        /* outline: 2px dashed silver;
+        outline-offset: 15px; */
+        padding: 8px 16px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="caja-1">background</div>
+    <div class="caja-2">background 02</div>
+    <div class="caja-3">CAJA-3</div>
+    <div class="caja-4"></div>
+    <div class="caja-5">
+      <img src="./background.jpg" alt="" />
+    </div>
+    <input type="text">
+  </body>
+</html>
