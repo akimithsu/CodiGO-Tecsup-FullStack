@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 200px auto 200px;
+  grid-template-rows: 100px auto 100px;
+  grid-template-areas:
+    "header header aside"
+    "navbar main aside"
+    "footer footer aside";
+}
+.header {
+  background-color: beige;
+  grid-area: header;
+}
+.nav {
+  background-color: aqua;
+  grid-area: navbar;
+}
+.aside {
+  background-color: blue;
+  grid-area: aside;
+}
+.section {
+  background-color: brown;
+  grid-area: section;
+}
+.footer {
+  background-color: blueviolet;
+  grid-area: footer;
+}

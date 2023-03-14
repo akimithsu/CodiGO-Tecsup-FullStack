@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+}
+p{
+    color: beige;
+}
+li{
+    display: inline-block;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section{
+    border: 1px solid red;
+    width: 25%;
+}
+nav img{
+    display: none;
+}
+@media(max-width:768px){
+    body{
+        background-color: blueviolet;
+    }
+    .section{
+        width: 50%;
+    }
+    li{
+        display: block;
+    }
+}
+@media(max-width: 480px){
+    body{
+        background-color: aqua;
+    }
+    .section{
+        width: 100%;
+    }
+    ul{
+        display: none;
+    }
+    nav img{
+        display: inline-block;
+    }
+}
