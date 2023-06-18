@@ -1,0 +1,13 @@
+body{
+    background: url(./pokedex-loading.png);
+    box-sizing: border-box;
+    border: solid 2px black;
+}
+
+h4, h5{
+    color: blue;
+}
+.row-pokemons{
+    box-sizing: border-box;
+    border: solid 2px black;
+}

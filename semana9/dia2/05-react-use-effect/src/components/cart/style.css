@@ -1,0 +1,9 @@
+.cart-item-img{
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+    margin-right: 1rem;
+}
+.cart-item > *:not(cart-item-img){
+    flex: 1;
+}
